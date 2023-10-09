@@ -1,0 +1,11 @@
+[
+  {
+    "id": 2,
+    "title": "Updated Chips",
+    "description": "Updated Lays",
+    "code": "1004",
+    "price": 3,
+    "thumbnail": "https://tinyurl.com/layspack",
+    "stock": 200
+  }
+]
