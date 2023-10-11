@@ -103,6 +103,40 @@ productManager.addProduct({
     stock: 100
 })
 
+productManager.addProduct({
+    title: 'Soda',
+    description: 'Coca-Cola',
+    price: 3,
+    thumbnail: 'https://tinyurl.com/coquitachica',
+    code: '1002',
+    stock: 100
+})
+
+productManager.addProduct({
+    title: 'Wine',
+    description: 'Luigi Bosca',
+    price: 8,
+    thumbnail: 'https://tinyurl.com/nothswine',
+    code: '1003',
+    stock: 100
+})
+
+productManager.updateProduct(4, {
+    title: 'Updated Wine',
+    description: 'Updated Luigi Bosca',
+    price: 12,
+    thumbnail: 'https://tiniyurl.com/nothswine',
+    stock: 300
+})
+
+productManager.updateProduct(3, {
+    title: 'Updated Soda',
+    description: 'Updated Coca-Cola',
+    price: 5,
+    thumbnail: 'https://tiniyurl.com/coquitachica',
+    stock: 200
+})
+
 
 productManager.updateProduct(2, {
     title: 'Updated Chips',
