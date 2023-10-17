@@ -1,4 +1,5 @@
-const fs = require('fs');
+import fs from 'fs'
+//const fs = require('fs');
 
 const path = './productsDB.json';
 
@@ -7,6 +8,8 @@ class ProductManager {
         this.products = [];
         this.path = path;
         this.loadProducts();
+
+        console.log('Se instancio la clase');
     }
 
     loadProducts() {
@@ -156,5 +159,7 @@ productManager.updateProduct(1, {
 
 // Eliminar un producto por su ID
 productManager.deleteProduct(1);
+
+export default ProductManager
 
 console.log(productManager);
