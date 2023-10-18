@@ -1,18 +1,31 @@
-import express from 'express'
+import express from 'express';
 import ProductManager from '../desafio1.js';
 
-const app = express()
-
+const app = express();
+const productManager = new ProductManager();
 
 app.get('/products/:pid', (req, res) => {
-    const  productManager = new ProductManager()
+  const { pid } = req.params;
+  const product = productManager.getProductByID(pid);
 
-    console.log(req.params);
-    const {pid} = req.params
-    
-    res.set(`Product ID: ${pid}`)
-})
+  if (product) {
+    res.json({ product });
+  } else {
+    res.status(404).json({ error: 'Producto no encontrado' });
+  }
+});
+
+app.get('/products', (req, res) => {
+  const { limit } = req.query;
+
+  if (limit) {
+    const limitedProducts = productManager.getProducts().slice(0, parseInt(limit));
+    res.json({ products: limitedProducts });
+  } else {
+    res.json({ products: productManager.getProducts() });
+  }
+});
 
 app.listen(8080, () => {
-    console.log('Listening...');
-}) 
+  console.log('Listening...');
+});

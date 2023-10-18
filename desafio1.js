@@ -84,6 +84,10 @@ class ProductManager {
         if (product) return product;
         else console.error('No encontrado');
     }
+
+    getProducts() {
+        return this.products;
+    }
 }
 
 const productManager = new ProductManager();
@@ -128,7 +132,7 @@ productManager.updateProduct(4, {
     title: 'Updated Wine',
     description: 'Updated Luigi Bosca',
     price: 12,
-    thumbnail: 'https://tiniyurl.com/nothswine',
+    thumbnail: 'https://tinyurl.com/nothswine',
     stock: 300
 })
 

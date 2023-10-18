@@ -1,1 +1,38 @@
-[{"id":2,"title":"Updated Chips","description":"Updated Lays","code":"1004","price":3,"thumbnail":"https://tinyurl.com/layspack","stock":200},{"id":3,"title":"Updated Soda","description":"Updated Coca-Cola","code":"1002","price":5,"thumbnail":"https://tiniyurl.com/coquitachica","stock":200},{"id":4,"title":"Updated Wine","description":"Updated Luigi Bosca","code":"1003","price":12,"thumbnail":"https://tiniyurl.com/nothswine","stock":300},{"id":5,"title":"Beers","description":"Brahma","code":"1001","price":5,"thumbnail":"https://tinyurl.com/brahmabeer","stock":100}]
+[
+  {
+    "id": 2,
+    "title": "Updated Chips",
+    "description": "Updated Lays",
+    "code": "1004",
+    "price": 3,
+    "thumbnail": "https://tinyurl.com/layspack",
+    "stock": 200
+  },
+  {
+    "id": 3,
+    "title": "Updated Soda",
+    "description": "Updated Coca-Cola",
+    "code": "1002",
+    "price": 5,
+    "thumbnail": "https://tiniyurl.com/coquitachica",
+    "stock": 200
+  },
+  {
+    "id": 4,
+    "title": "Updated Wine",
+    "description": "Updated Luigi Bosca",
+    "code": "1003",
+    "price": 12,
+    "thumbnail": "https://tiniyurl.com/nothswine",
+    "stock": 300
+  },
+  {
+    "id": 5,
+    "title": "Beers",
+    "description": "Brahma",
+    "code": "1001",
+    "price": 5,
+    "thumbnail": "https://tinyurl.com/brahmabeer",
+    "stock": 100
+  }
+]
